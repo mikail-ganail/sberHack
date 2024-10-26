@@ -1,0 +1,35 @@
+<div class="lol">
+  <header>
+    <div class="hzz" *ngIf="!isScrolled">
+      <div>
+        <a href="#">г. Альметьевск, ул. Гагарина 10</a>
+      </div>
+      <div>
+        <a href="#">+7 800 234-66-22</a>
+      </div>
+      <div>
+        <a href="#">RU</a>
+      </div>
+    </div>
+    <nav [ngClass]="{ scrolled: isScrolled}">
+      <div class="tagras">
+        <img routerLink="main" src="assets/data/image/tagras.png" alt="" />
+      </div>
+      <ul class="navigator">
+        <li>Компания</li>
+        <li>Деятельность</li>
+        <li>Устойчивое развитие</li>
+        <li>Пресс-центр</li>
+        <li routerLink="jayjest" routerLinkActive="">Новостной дайджест</li>
+        <li>Карьера</li>
+        <li>Контакты</li>
+      </ul>
+      <div>
+        <fa-icon
+          style="font-size: 22px; color: rgb(126 118 118)"
+          [icon]="searchIcon"
+        ></fa-icon>
+      </div>
+    </nav>
+  </header>
+</div>

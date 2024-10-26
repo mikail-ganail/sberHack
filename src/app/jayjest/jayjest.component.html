@@ -1,0 +1,34 @@
+<div class="jayjest">
+    <div>
+        <div class="title-block">
+            <div>
+                Статьи
+            </div>
+            <div>
+                Прохоров Сергей Ильич - Главный инженер
+            </div>
+        </div>
+        <h4>главная - Статьи</h4>
+    </div>
+
+    <div class="exmp-container">
+        <div class="exemplar" *ngFor="let dajest of dajustService.dajestListSign()">
+            <div class="image">
+                <img src="{{dajest.image}}" alt="">
+            </div>
+
+            <div class="content">
+                <div class="name">{{dajest.title}}</div>
+                <div class="desc">{{dajest.desc}}</div>
+                <div class="link">
+                    <a href="{{dajest.link}}">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="update" (click)="update()">
+            <img src="../../assets/data/image/update.svg" alt="">
+            <p>загрузить еще</p>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: local("Roboto"),
+        url("../src/assets/data/fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: local("Roboto"),
+        url("../src/assets/data/fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+  }
