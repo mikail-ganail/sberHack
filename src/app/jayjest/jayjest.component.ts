@@ -18,7 +18,7 @@ export class JayjestComponent {
   update() {
     this.startLoading()
     console.log(this.position);
-    //this.dajustService.getDajests(this.position);
+    this.dajustService.getDajests(this.position);
   }
 
   getIcon() {
