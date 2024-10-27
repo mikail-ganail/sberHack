@@ -1,6 +1,6 @@
 export interface IGetData {
     title: string;
-    desc: string;
-    image: any;
-    link: string;
+    short_content: string;
+    img: string;
+    href: string;
 }
