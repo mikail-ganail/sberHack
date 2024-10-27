@@ -12,13 +12,13 @@ export class JayjestComponent {
   iconn = faDownload;
 
   ngOnInit() {
-    //this.dajustService.getDajests(this.position);
+    this.dajustService.getDajests(this.position);
   }
 
   update() {
     this.startLoading()
     console.log(this.position);
-    this.dajustService.getDajests(this.position);
+    //this.dajustService.getDajests(this.position);
   }
 
   getIcon() {

@@ -13,11 +13,12 @@
     </div>
   </div>
 
-  <div class="exmp-container">
+  <div class="exmp-container" *ngIf="!dajustService.dajestListSign().length">
     <div *ngFor="let i of [1,2,3]" class="lala">
-        {{i}}
         <div class="imDef"></div>
-        <div class="txDef"></div>
+        <div class="txDef">
+            <div *ngFor="let l of [1,2,3,4,5,6]"></div>
+        </div>
     </div>
   </div>
 
